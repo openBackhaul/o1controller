@@ -1,0 +1,18 @@
+{
+  "network-topology:node": [
+    {
+      "node-id": "${Mountname}",
+      "host": "${MPAddress}",
+      "port": ${NetconfPort},
+      "username": "${Username}",
+      "password": "${Password}",
+      "default-request-timeout-millis": ${RequestTimeout},
+      "reconnect-on-changed-schema": "${ReconnectOnSchemaChange}",
+      "max-connection-attempts": ${MaxConnAttempts},
+      "schema-cache-directory": "${Mountname}",
+      "concurrent-rpc-limit": ${RpcLimit},
+      "tcp-only": "${TcpOnly}", 
+      "keepalive-delay": ${KeepAliveDelay}
+    }
+  ]
+}

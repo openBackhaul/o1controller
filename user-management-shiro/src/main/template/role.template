@@ -1,0 +1,5 @@
+{
+  "name": "$NAME",
+  "description": "$DESCRIPTION",
+  "domainid": "$DOMAIN"
+}

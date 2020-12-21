@@ -1,0 +1,8 @@
+{
+    "name": "$NAME",
+    "description": "$DESCRIPTION",
+    "email": "$EMAIL",
+    "password": "$PASSWORD",
+    "domainid": "$DOMAIN",
+    "enabled": 1
+}

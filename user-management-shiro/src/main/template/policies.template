@@ -1,0 +1,15 @@
+{
+  "aaa:policies": [
+    {
+      "resource": "$ID",
+      "permissions": [
+        {
+          "actions": [
+            "get", "put", "post", "patch", "delete"
+          ],
+          "role": "$ROLE"
+        }
+      ]
+    }
+  ]
+}

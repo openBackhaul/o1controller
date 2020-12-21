@@ -1,0 +1,6 @@
+NAME,DESCRIPTION,EMAIL,PASSWORD,DOMAIN
+adam.retro,An SDN administrator.,adam.retro@oam.o-ran-sc.org,Default4Users!,sdn
+pixie.pristine,An SDN provisioner.,pixie.pristine@oam.o-ran-sc.org,Default4Users!,sdn
+sharon.santiago,An SDN supervisor.,sharon.santiago@oam.o-ran-sc.org,Default4Users!,sdn
+micro.service,An antomation service controlling the network.,micro.service@oam.o-ran-sc.org,Default4Users!,sdn
+martin.skorupski,PTL of O-RAN-SC OAM.,martin.skourpski@highstreet-technologies.com,beRPcTj1Msqy09R8bkmn,sdn

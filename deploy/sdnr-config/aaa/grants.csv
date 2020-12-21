@@ -1,0 +1,6 @@
+ID,NAME,DOMAIN,ROLE
+1001,adam.retro,sdn,administration
+1002,pixie.pristine,sdn,provisioning
+1003,sharon.santiago,sdn,supervision
+1004,micro.service,sdn,automation
+8888,martin.skorupski,sdn,administration

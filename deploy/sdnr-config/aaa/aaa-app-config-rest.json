@@ -1,0 +1,560 @@
+{
+    "aaa:policies": {
+        "policies": [
+            {
+                "resource": "/auth/v1/**",
+                "index": 1,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/config/aaa*/**",
+                "index": 2,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/jolokia/**",
+                "index": 3,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "get",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "get",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "automation",
+                        "actions": [
+                            "get",
+                            "post"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/operations/cluster-admin**",
+                "index": 4,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "automation",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/rests/data/network-topology:network-topology/topology=topology-netconf/**",
+                "index": 10,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "automation",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/restconf/**",
+                "index": 20,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/about",
+                "index": 90,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "automation",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/apidoc/**",
+                "index": 91,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/help/**",
+                "index": 92,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/odlux/**",
+                "index": 93,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/oauth2/**",
+                "index": 94,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "automation",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/tiles/**",
+                "index": 95,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/topology/**",
+                "index": 96,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/transportpce/**",
+                "index": 97,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "automation",
+                        "actions": [
+                            "put",
+                            "get",
+                            "patch",
+                            "delete",
+                            "post"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/yang-schema/**",
+                "index": 98,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            },
+            {
+                "resource": "/websocket/**",
+                "index": 99,
+                "permissions": [
+                    {
+                        "role": "admin",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "administration",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "provisioning",
+                        "actions": [
+                            "get"
+                        ]
+                    },
+                    {
+                        "role": "supervision",
+                        "actions": [
+                            "get"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

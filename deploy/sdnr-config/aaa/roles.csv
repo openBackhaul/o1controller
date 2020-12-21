@@ -1,0 +1,5 @@
+NAME,DESCRIPTION,DOMAIN
+administration,A role for admin ONAP SDN-R OpenDaylight.,sdn
+provisioning,A role to provision ONAP SDN-R and controled network functions.,sdn
+supervision,A role to get read access to ONAP SDN-R and controlled network function.,sdn
+automation,A role for applications and micro-services.,sdn

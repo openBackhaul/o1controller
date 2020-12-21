@@ -1,0 +1,2 @@
+Mountname;MPAddress;NetconfPort;Username;Password;RequestTimeout;ReconnectOnSchemaChange;MaxConnAttempts;RpcLimit;TcpOnly;KeepAliveDelay;
+mountpoint1;127.0.0.1;8300;admin;admin;900000;false;3;0;false;120;

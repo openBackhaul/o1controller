@@ -1,0 +1,47 @@
+################################################################################
+#
+# Copyright 2020 highstreet technologies GmbH and others
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#     http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+################################################################################
+# OpenDaylight docker compose for build only
+# see .env file for environment variables
+
+version: "3.3"
+
+services:
+  sdnr:
+    image: ${DOCKER_REPO}${DOCKER_IMAGE_NAME}:${DOCKER_IMAGE_TAG}
+    container_name: sdnr
+    entrypoint: /opt/opendaylight/scripts/sdnr-startup.sh
+    ports:
+      - "${PORTPREFIX}8181:8181"
+    environment:
+      - SDNR_MOUNTPOINT_COUNT=0
+      - ODL_HOME=${ODL_HOME}
+      - ODL_BASE_URL=http://127.0.0.1:8181
+
+      # IMPORTANT: Do not forget to set env variables on the host with ODL Username and password
+      - ODL_USER=${ODL_USERNAME}
+      - ODL_PASSWORD=${ODL_PASSWORD}      
+    volumes:
+     - ${LOCAL_SDNR_MOUNT}/sdnr/logs:${ODL_HOME}/data/log
+     - ./sdnr-config/aaa/aaa-app-config.xml:${ODL_HOME}/system/org/opendaylight/aaa/aaa-shiro/0.12.1/aaa-shiro-0.12.1-aaa-app-config.xml
+     - ./sdnr-config/org.jolokia.osgi.cfg:${ODL_HOME}/etc/org.jolokia.osgi.cfg
+     - ./sdnr-config:${ODL_HOME}/configuration/sdnr-config
+    logging:
+      driver:   "json-file"
+      options:
+        max-size: "30m"
+        max-file: "5"

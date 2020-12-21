@@ -1,0 +1,5 @@
+{
+  "roleid": "$ROLE@$DOMAIN",
+  "userid": "$NAME@$DOMAIN",
+  "domainid": "$DOMAIN"
+}
